@@ -26,7 +26,7 @@ export function HeroSection({ title, description, heroImage, template }: HeroSec
         </h1>
         <p className="text-lg text-muted-foreground">{description}</p>
         <Button size="lg" className="bg-primary hover:bg-primary/90">
-          Get Started
+          Commencer
         </Button>
       </div>
       <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">

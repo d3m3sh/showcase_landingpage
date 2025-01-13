@@ -7,10 +7,10 @@ export function ContactSection() {
     <div className="grid md:grid-cols-2 gap-8">
       <div>
         <h2 className="text-3xl font-semibold mb-4 text-primary">
-          Contact Us
+          Contactez-nous
         </h2>
         <p className="text-muted-foreground mb-8">
-          Get in touch with us to discuss how we can help you achieve your goals.
+          Prenez contact avec nous pour discuter de la façon dont nous pouvons vous aider à atteindre vos objectifs.
         </p>
       </div>
       <ContactForm />

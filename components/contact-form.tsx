@@ -19,9 +19,9 @@ import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 
 const formSchema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Invalid email address'),
-  message: z.string().min(10, 'Message must be at least 10 characters'),
+  name: z.string().min(2, 'Le nom doit contenir au moins 2 caractères'),
+  email: z.string().email('Adresse email invalide'),
+  message: z.string().min(10, 'Le message doit contenir au moins 10 caractères'),
 });
 
 export function ContactForm() {
@@ -41,10 +41,10 @@ export function ContactForm() {
     try {
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1000));
-      toast.success('Message sent successfully!');
+      toast.success('Message envoyé avec succès !');
       form.reset();
     } catch (error) {
-      toast.error('Failed to send message. Please try again.');
+      toast.error('Échec de l\'envoi du message. Veuillez réessayer.');
     } finally {
       setIsSubmitting(false);
     }
@@ -59,9 +59,9 @@ export function ContactForm() {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Name</FormLabel>
+                <FormLabel>Nom</FormLabel>
                 <FormControl>
-                  <Input placeholder="Your name" {...field} />
+                  <Input placeholder="Votre nom" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -74,7 +74,7 @@ export function ContactForm() {
               <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input placeholder="your@email.com" type="email" {...field} />
+                  <Input placeholder="votre@email.com" type="email" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -88,7 +88,7 @@ export function ContactForm() {
                 <FormLabel>Message</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="How can we help you?"
+                    placeholder="Comment pouvons-nous vous aider ?"
                     className="min-h-[120px]"
                     {...field}
                   />
@@ -98,7 +98,7 @@ export function ContactForm() {
             )}
           />
           <Button type="submit" className="w-full" disabled={isSubmitting}>
-            {isSubmitting ? 'Sending...' : 'Send Message'}
+            {isSubmitting ? 'Envoi...' : 'Envoyer le Message'}
           </Button>
         </form>
       </Form>

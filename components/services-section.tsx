@@ -20,14 +20,14 @@ export function ServicesSection({ features, template, Icon }: ServicesSectionPro
   return (
     <>
       <h2 className="text-3xl font-semibold mb-8 text-primary">
-        Our Services
+        Nos Services
       </h2>
       <div className={featuresStyles[template]}>
         {features.map((feature, index) => (
           <ServiceCard
             key={index}
             title={feature}
-            description={`Professional expertise in ${feature.toLowerCase()} to meet your needs.`}
+            description={`Expertise professionnelle en ${feature.toLowerCase()} pour répondre à vos besoins.`}
             Icon={Icon}
           />
         ))}
