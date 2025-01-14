@@ -2,7 +2,7 @@ import { Activity, Review } from './types';
 import { Briefcase, Stamp, Paintbrush } from 'lucide-react';
 
 export const activities: Record<string, Activity> = {
-  'avocat': {
+  'law-firm': {
     title: 'Services Juridiques Experts',
     description: 'Des professionnels du droit dévoués offrant des solutions complètes pour tous vos besoins juridiques.',
     features: [

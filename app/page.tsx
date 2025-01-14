@@ -13,7 +13,7 @@ import { ContactSection } from '@/components/contact-section';
 import { cn } from '@/lib/utils';
 
 export default function Home() {
-  const [currentActivity, setCurrentActivity] = useState<ActivityType>('avocat');
+  const [currentActivity, setCurrentActivity] = useState<ActivityType>('law-firm');
   const [currentTemplate, setCurrentTemplate] = useState<TemplateType>('modern');
 
   const activity = activities[currentActivity];

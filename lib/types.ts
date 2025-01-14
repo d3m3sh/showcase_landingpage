@@ -1,3 +1,5 @@
+import { LucideIcon } from "lucide-react";
+
 export type ActivityType = 'law-firm' | 'notary' | 'interior-designer';
 export type TemplateType = 'modern' | 'classic' | 'minimal';
 
@@ -6,7 +8,7 @@ export interface Activity {
   description: string;
   features: string[];
   heroImage: string;
-  icon: string;
+  icon: LucideIcon;
 }
 
 export interface Review {

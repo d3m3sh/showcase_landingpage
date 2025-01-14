@@ -14,7 +14,7 @@ export function ActivitySwitcher({
   onActivityChange,
 }: ActivitySwitcherProps) {
   const activities: { value: ActivityType; label: string }[] = [
-    { value: 'avocat', label: 'Services juridiques' },
+    { value: 'law-firm', label: 'Services juridiques' },
     { value: 'notary', label: 'Notaire' },
     { value: 'interior-designer', label: "Décorateur d'intérieur" },
   ];
